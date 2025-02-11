@@ -76,3 +76,59 @@ let info : {
 } 
 
 
+//next lessons arrey//
+
+const skills: string[] = ['Dev' , 'DevOps'];
+
+for (const skill of skills) {
+    console.log(skill);
+}
+
+
+ //next lessons tuples обмежений кількістю типів//
+
+ const skillsTwo: [number, string] = [1,'Dev'];
+
+
+  //next lessons redonly массив без можливості внесення змін//
+
+  const skillsThre: readonly [number, string] = [1,'Dev'];
+
+
+    //next lessons enums //
+
+    enum StatusCode {
+        SUCCESS = 1,
+        IN_PROCESS,
+        FAILD
+    }
+
+    const resTwo = {
+        message:'True',
+        statusCode: StatusCode.SUCCESS
+    };
+
+    /*
+    1 - true
+    2 - false
+    3 - drop
+    */
+
+function action(status : StatusCode){
+
+}
+
+action(StatusCode.SUCCESS);
+
+
+enum Roles{
+    ADMIN = 1,
+    USER
+}
+
+const enum RolesTwo {
+    ADMIN = 1,
+    USER = 2
+}
+
+const res2 = RolesTwo.ADMIN;

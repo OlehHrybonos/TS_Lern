@@ -51,3 +51,37 @@ let info = {
         }
     }
 };
+//next lessons arrey//
+const skills = ['Dev', 'DevOps'];
+for (const skill of skills) {
+    console.log(skill);
+}
+//next lessons tuples обмежений кількістю типів//
+const skillsTwo = [1, 'Dev'];
+//next lessons redonly массив без можливості внесення змін//
+const skillsThre = [1, 'Dev'];
+//next lessons enums //
+var StatusCode;
+(function (StatusCode) {
+    StatusCode[StatusCode["SUCCESS"] = 1] = "SUCCESS";
+    StatusCode[StatusCode["IN_PROCESS"] = 2] = "IN_PROCESS";
+    StatusCode[StatusCode["FAILD"] = 3] = "FAILD";
+})(StatusCode || (StatusCode = {}));
+const resTwo = {
+    message: 'True',
+    statusCode: StatusCode.SUCCESS
+};
+/*
+1 - true
+2 - false
+3 - drop
+*/
+function action(status) {
+}
+action(StatusCode.SUCCESS);
+var Roles;
+(function (Roles) {
+    Roles[Roles["ADMIN"] = 1] = "ADMIN";
+    Roles[Roles["USER"] = 2] = "USER";
+})(Roles || (Roles = {}));
+const res2 = 1 /* RolesTwo.ADMIN */;
