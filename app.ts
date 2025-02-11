@@ -30,3 +30,49 @@ function getFullName (firstname: string, surname: string): string {
 const getFullNameArrow = (firstname: string, surname: string): string => {
     return `${firstname} ${surname}`;
 }
+
+
+//next lessons object//
+
+function getFullNameObject (userEntity: { firstname:string,surname:string }): string {
+    return `${userEntity.firstname} ${userEntity.surname}`;
+} 
+
+const user = {
+    firstname:'Oleh',
+    surname:'Hrybonos',
+    city:'Mykolaiv',
+    age: 35,
+    skills: {
+        dev:true,
+        devops: true
+    }
+}
+
+console.log(getFullNameObject(user));
+
+//next lessons object//
+
+let info : {
+    officeId: number,
+	isOpened: boolean,
+	contacts: {
+		phone: string,
+		email: string,
+		address: {
+			city: string
+		}
+	}
+} = {
+	"officeId": 45,
+	"isOpened": false,
+	"contacts": {
+		"phone": "+79100000000",
+		"email": "my@email.ru",
+		"address": {
+			"city": "Москва"
+		}
+	}
+} 
+
+
