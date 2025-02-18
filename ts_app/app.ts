@@ -199,6 +199,12 @@ function logMultipleIds(a:string |number, b : string |boolean) {
     }
 }
 
-  //next lessons Literal Types //
+  //next lessons void //
+
+  function loggId (id: string | number): void{
+    console.log(id);
+  }
+
+  
 
   

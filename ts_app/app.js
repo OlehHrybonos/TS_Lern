@@ -147,4 +147,7 @@ function logMultipleIds(a, b) {
         console.log(a);
     }
 }
-//next lessons Literal Types //
+//next lessons void //
+function loggId(id) {
+    console.log(id);
+}
